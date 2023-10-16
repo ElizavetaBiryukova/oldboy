@@ -2,7 +2,17 @@
 
 @import 'global/fonts.scss';
 @import 'global/variables.scss';
+@import 'global/visualy-hidden.scss';
 
 // Blocks
 
 @import 'blocks/page.scss';
+@import 'blocks/logo.scss';
+@import 'blocks/header.scss';
+@import 'blocks/nav.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/select-city.scss';
+@import 'blocks/main.scss';
+@import 'blocks/content.scss';
+@import 'blocks/form.scss';
+@import 'blocks/checkbox.scss';

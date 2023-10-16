@@ -1,0 +1,9 @@
+.logo__svg {
+    fill: $white;
+    transition: all 1s;
+}
+
+.logo__svg:hover {
+    fill: $brown;
+    transition: all 1s;
+}

@@ -1,0 +1,20 @@
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0%;
+    list-style-type: none;
+    padding: 0%;
+    gap: 5%;
+}
+
+.nav__item {
+    letter-spacing: 0.4px;
+    color: $white;
+    transition: color 1s;
+    cursor: pointer;
+}
+
+.nav__item:hover {
+    color: $brown;
+    transition: color 1s;
+}

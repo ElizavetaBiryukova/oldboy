@@ -1,0 +1,26 @@
+.contacts {
+    display: flex;
+    gap: 5%;
+}
+
+.contacts__call {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.contacts__phone {
+    color: $white;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: right;
+}
+
+.contacts__button {
+    color: $white;
+    font-size: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid $brown;
+    font-family: $font-family;
+    text-transform: uppercase;
+}

@@ -1,0 +1,24 @@
+.select-city {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-city__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.select-city__title {
+    color: $brown;
+    margin: 0%;
+    font-size: 12px;
+}
+
+.select-city__name-city {
+    margin: 0%;
+    width: max-content;
+}
+
+.select-city__pin {
+    fill: $brown;
+}
