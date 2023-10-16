@@ -8,7 +8,106 @@
 </head>
 
 <body class="page__body">
-    <div class="greeting">Hello</div>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logo logo">
+                <a href="#" class="logo__link"></a>
+            </div>
+
+
+            <nav class="header__nav nav">
+
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--active">
+                        <a class="nav__link" aria-label="Главная">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" aria-label="Услуги">
+                            Услуги
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" aria-label="Блог">
+                            Блог
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" aria-label="Франшиза">
+                            Франшиза
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" aria-label="Инвестиции">
+                            Инвестиции
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" aria-label="Вакансии">
+                            Вакансии
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" aria-label="Контакты">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <div class="header__contacts contacts">
+                <div class="contacts__call">
+                    <a href="tel:88002345973" class="contacts__phone">8 800 2345 973</a>
+                </div>
+
+                <div class="contacts__city select-city">
+                    <p class="select-city__title">Выбери свой барбершоп &#x25BC;</p>
+                    <p class="select-city__name-city">Москва</p>
+                </div>
+            </div>
+
+            <div class="header__menu"></div>
+        </div>
+    </header>
+
+    <main class="main">
+        <h1 class="main__title">Франшиза OldBoy</h1>
+        <div class="main__wrapper">
+
+            <section class="main__content content">
+                <h2 class="content__title">Стань владельцем барбершопа</h2>
+                <p class="content__text">Крупнейшей в мире сети oldboy barbershop</p>
+                <p class="content__text">зарабатывай 250 000 рублей + в месяц</p>
+            </section>
+
+            <section class="main__form form">
+                <form action="">
+                    <fieldset>
+                        <legend>Заполни форму и мы вышлем фин. модель на твою почту</legend>
+                        <input type="text" placeholder="Фамилия Имя">
+                        <input type="text" placeholder="Номер телефона">
+                        <input type="text" placeholder="E-mail">
+                        <input type="text" placeholder="Желаемый город">
+
+                        <div>
+                            <input type="checkbox" id="checkbox" />
+                            <label for="checkbox">Я соглашаюсь с политикой конфиденциальности</label>
+                        </div>
+
+                        <button type="submit">Отправить</button>
+                    </fieldset>
+
+                </form>
+            </section>
+
+        </div>
+
+
+    </main>
+
+
     <script src="bundle.js"></script>
 </body>
 

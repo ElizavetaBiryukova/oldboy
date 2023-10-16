@@ -43,6 +43,9 @@ module.exports = {
         static: {
             directory: path.join(__dirname, 'dist'),
         },
+        devMiddleware: {
+            writeToDisk: true,
+        },
         open: true,
     },
 };
