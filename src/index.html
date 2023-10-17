@@ -129,16 +129,18 @@
             </section>
 
             <section class="main__form form">
-                <form action="">
+                <form action="#" method="post">
                     <fieldset class="form__container">
                         <legend class="form__title">Заполни форму<br /> <span class="form__text">и
                                 мы вышлем фин. модель на твою почту</span></legend>
                         <input class="form__input" type="text" placeholder="Имя">
-                        <input class="form__input" type="text" placeholder="Телефон">
-                        <input class="form__input" type="text" placeholder="E-mail">
+                        <input class="form__input" type="phone" placeholder="Телефон"
+                            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                            title="+7XXXXXXXXXX или 8XXXXXXXXXX" required>
+                        <input class="form__input" type="email" placeholder="E-mail" required>
 
                         <div class="form__checkbox checkbox">
-                            <input class="checkbox__input" type="checkbox" id="checkbox" />
+                            <input class="checkbox__input" type="checkbox" id="checkbox" required />
                             <label class="checkbox__text" for="checkbox">Я соглашаюсь с<br /> <a
                                     class="checkbox__link">политикой
                                     конфиденциальности</a></label>

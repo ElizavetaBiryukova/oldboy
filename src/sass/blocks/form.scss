@@ -33,17 +33,25 @@
     color: rgba(255, 255, 255, 0.7);
     font-size: 16px;
     line-height: 1.7;
-    text-transform: uppercase;
     background-color: transparent;
     border: 10px solid rgba(214, 163, 84, .5);
     border-image: url(../images/border.png) 7 round round;
-    ;
 }
 
 .form__input::placeholder {
     font-family: $font-family-base;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.7);
+}
+
+.form__input:invalid {
+    border: 2px solid red;
+}
+
+.form__input:invalid:placeholder-shown {
+    background-color: transparent;
+    border: 10px solid rgba(214, 163, 84, .5);
+    border-image: url(../images/border.png) 7 round round;
 }
 
 .form__button {
