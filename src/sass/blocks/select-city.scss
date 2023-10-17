@@ -21,4 +21,24 @@
 
 .select-city__pin {
     fill: $brown;
+    width: 60px;
+}
+
+@media (max-width: 997px) {
+    .select-city {
+        padding-top: 11px;
+        width: 100%;
+        justify-content: normal;
+    }
+}
+
+@media (max-width: 660px) {
+    .select-city {
+        margin-bottom: 20px;
+        padding-top: 0px;
+    }
+
+    .select-city__title {
+        font-size: 8px;
+    }
 }

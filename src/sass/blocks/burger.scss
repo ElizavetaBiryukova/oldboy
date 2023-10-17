@@ -2,8 +2,8 @@
     .burger {
         position: fixed;
         z-index: 9;
-        top: 58px;
-        right: 30px;
+        top: 50px;
+        right: 18px;
         display: flex;
         flex-direction: column;
         width: 21px;
@@ -29,5 +29,14 @@
     .burger--open {
         transform: rotate(90deg);
         transition: all 1s;
+    }
+}
+
+@media (max-width: 660px) {
+    .burger {
+        position: fixed;
+        top: 24px;
+        right: 21px;
+
     }
 }

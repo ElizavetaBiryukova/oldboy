@@ -11,6 +11,10 @@
 }
 
 @media (max-width: 997px) {
+    .logo {
+        padding-top: 11px;
+    }
+
     .logo__svg {
         width: 188px;
         height: 100px;
@@ -21,5 +25,9 @@
     .logo__svg {
         width: 85px;
         height: 45px;
+    }
+
+    .logo {
+        padding-top: 0px;
     }
 }

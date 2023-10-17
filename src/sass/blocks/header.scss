@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     padding: 61px 53px 0px 53px;
+    gap: 2%;
 }
 
 .header__logo {
@@ -22,5 +23,17 @@
 @media (max-width: 997px) {
     .header__burger {
         display: block;
+    }
+
+    .header {
+        padding: 41px 28px 0px 40px;
+        justify-content: normal;
+    }
+}
+
+@media (max-width: 660px) {
+    .header {
+        padding: 27px 19px 0px 19px;
+        gap: 0%;
     }
 }

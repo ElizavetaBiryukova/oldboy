@@ -6,7 +6,7 @@
 .contacts__call {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 90%;
 }
 
 .contacts__phone {
@@ -23,12 +23,24 @@
     border-bottom: 1px solid $brown;
     font-family: $font-family;
     text-transform: uppercase;
+    text-align: right;
+}
+
+@media (max-width: 997px) {
+    .contacts {
+        width: 100%;
+    }
+
+    .contacts__call {
+        width: 60%;
+    }
 }
 
 @media (max-width: 660px) {
     .contacts {
         display: flex;
         flex-direction: column;
+        margin-bottom: 27px;
     }
 
     .contacts__city {
@@ -37,5 +49,7 @@
 
     .contacts__call {
         order: 2;
+        align-items: center;
+        width: 80%;
     }
 }

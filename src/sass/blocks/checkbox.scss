@@ -15,8 +15,8 @@
 .checkbox__link {
     color: $brown;
     display: block;
-    width: 100%;
-    margin-top: 5px;
+    width: 75%;
+    margin-top: -6px;
     margin-left: 50px;
     text-align: left;
     text-decoration: none;
@@ -53,4 +53,10 @@
 .checkbox__input:checked+.checkbox__text::before {
     content: "V";
     background-color: $brown;
+}
+
+@media (max-width: 660px) {
+    .checkbox__link {
+        width: 75%;
+    }
 }
