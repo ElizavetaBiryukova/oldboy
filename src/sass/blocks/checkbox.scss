@@ -1,10 +1,56 @@
+.checkbox {
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0px 15px;
+}
+
 .checkbox__text {
     font-size: 10px;
     font-family: $font-family;
     font-weight: 600;
     text-transform: uppercase;
+    width: 100%;
 }
 
 .checkbox__link {
     color: $brown;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 50px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.checkbox__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.checkbox__input+.checkbox__text {
+    user-select: none;
+}
+
+.checkbox__input+.checkbox__text::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    margin: 0px 16px 0 -128px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 10px 10px;
+    border: 2px solid $brown;
+    border-radius: 3px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.checkbox__input:checked+.checkbox__text::before {
+    content: "V";
+    background-color: $brown;
 }

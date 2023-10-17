@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -11,10 +12,15 @@
 }
 
 .header__nav {
-    /* margin-right: 13%; */
     width: 62%;
 }
 
-.header__menu {
+.header__burger {
     display: none;
+}
+
+@media (max-width: 997px) {
+    .header__burger {
+        display: block;
+    }
 }

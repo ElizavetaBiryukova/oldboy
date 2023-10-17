@@ -1,0 +1,31 @@
+.burger {
+    position: fixed;
+    z-index: 9;
+    top: 58px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 21px;
+    cursor: pointer;
+    border: 2px solid $brown;
+    border-radius: 50%;
+    background-color: rgba(19, 19, 19, .5);
+    padding: 6px 10px;
+    transition: all 1s;
+}
+
+.burger__line {
+    background: $white;
+    height: 3px;
+    margin: 3px 0;
+    transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.burger:hover .burger__line {
+    background: $brown;
+}
+
+.burger--open {
+    transform: rotate(90deg);
+    transition: all 1s;
+}

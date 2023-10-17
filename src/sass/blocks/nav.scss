@@ -18,3 +18,31 @@
     color: $brown;
     transition: color 1s;
 }
+
+@media (max-width: 997px) {
+    .nav {
+        display: none;
+    }
+
+    .nav--open {
+        position: absolute;
+        display: block;
+        max-width: 320px;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        background-color: $brown;
+        z-index: 2;
+    }
+
+    .nav--open .nav__list {
+        display: flex;
+        flex-direction: column;
+        padding: 35% 5%;
+        gap: 10px;
+    }
+
+    .nav--open .nav__item:hover {
+        color: $black;
+    }
+}

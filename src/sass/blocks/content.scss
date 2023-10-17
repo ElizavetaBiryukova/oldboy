@@ -61,5 +61,11 @@
 .content__image {
     position: absolute;
     top: 165px;
-    right: -447px;
+    right: -580px;
+}
+
+@media (max-width: 997px) {
+    .content__image {
+        display: none;
+    }
 }

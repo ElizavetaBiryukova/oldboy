@@ -24,3 +24,18 @@
     font-family: $font-family;
     text-transform: uppercase;
 }
+
+@media (max-width: 660px) {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts__city {
+        order: 1;
+    }
+
+    .contacts__call {
+        order: 2;
+    }
+}
